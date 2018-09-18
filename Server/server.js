@@ -1,9 +1,19 @@
+require('dotenv').config()
 const session = require('express-session');
 const massive = require('massive');
 const bodyParser = require('body-parser');
 const express = require('express');
+const app = express();
 
 app.use( express.static(`${__dirname}/build`))
+
+const {
+
+    SESSION_SECRET,
+    CONNECTION_STRING,
+    SERVER_PORT
+
+} = process.env;
 
 app.use(session ({
     secret: SESSION_SECRET,
