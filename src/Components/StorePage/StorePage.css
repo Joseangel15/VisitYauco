@@ -1,0 +1,28 @@
+
+.cartBtn{
+    background-image: url('../../Assets/icons8-shopping-cart-32\ \(1\).png');
+    height: 35px;
+    width: 35px;
+    background-color: transparent;
+    border: none;
+}
+
+.pageTitle{
+    border: 1px solid black;
+}
+
+.productBox{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100%;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.productPic{
+    max-width: 100%;
+    max-height: 100%;
+}

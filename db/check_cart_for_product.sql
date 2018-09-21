@@ -1,0 +1,1 @@
+select * from Ycart where product_id = $1 and userid = $2;

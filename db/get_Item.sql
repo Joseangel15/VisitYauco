@@ -1,0 +1,1 @@
+select * from Yitems where id = $1;

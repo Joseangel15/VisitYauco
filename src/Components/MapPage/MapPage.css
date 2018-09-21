@@ -1,0 +1,22 @@
+
+.googleMap{
+    height: 300px;
+    width: 250px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.weatherText{
+    width: 340px;
+    margin: auto;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.weatherInfo{
+    height: 100px;
+    width: 300px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 20px;
+}

@@ -1,0 +1,175 @@
+
+.destinationsTitle{
+    font-family: 'Alegreya Sans SC';
+    font-size: 26px;
+}
+
+.destinBtns{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: auto;
+}
+
+.locatBtns1{
+    height: 80px;
+    width: 375.2px;
+    margin: 3px 0px;
+    font-family: 'Alegreya Sans SC';
+    color: white;
+    font-size: 30px;
+    background-image: url(../../Assets/Lago_Luchetti.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -ms-background-position-x: center;
+    -ms-background-position-y: bottom;
+    background-position: center;
+    opacity: 0.6;
+    border: none;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.locatBtns2{
+    height: 80px;
+    width: 375.2px;
+    margin: 3px 0px;
+    font-family: 'Alegreya Sans SC';
+    color: white;
+    font-size: 30px;
+    background-image: url(../../Assets/GUÁNICA-Playa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    opacity: 0.6;
+    border: none;
+    text-shadow: 2px 2px 4px #000000;
+    
+}
+
+.locatBtns3{
+    height: 80px;
+    width: 375.2px;
+    margin: 3px 0px;
+    font-family: 'Alegreya Sans SC';
+    color: white;
+    font-size: 30px;
+    background-image: url(../../Assets/VolkyLand.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    border: none;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.locatBtns4{
+    height: 80px;
+    width: 375.2px;
+    margin: 3px 0px;
+    font-family: 'Alegreya Sans SC';
+    color: white;
+    font-size: 30px;
+    background-image: url(../../Assets/Iglesia_Yauco.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    border: none;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.locatBtns5{
+    height: 80px;
+    width: 375.2px;
+    margin: 3px 0px;
+    font-family: 'Alegreya Sans SC';
+    color: white;
+    font-size: 30px;
+    background-image: url(../../Assets/guilliganvideo1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    border: none;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.locatBtns6{
+    height: 80px;
+    width: 375.2px;
+    margin: 3px 0px;
+    font-family: 'Alegreya Sans SC';
+    color: white;
+    font-size: 30px;
+    background-image: url(../../Assets/Susua_Forest.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    border: none;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.locatBtns7{
+    height: 80px;
+    width: 375.2px;
+    margin: 3px 0px;
+    font-family: 'Alegreya Sans SC';
+    color: white;
+    font-size: 30px;
+    background-image: url(../../Assets/Yaucromatic-3-2000x1200.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    opacity: 0.6;
+    border: none;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.locatBtns8{
+    height: 80px;
+    width: 375.2px;
+    margin: 3px 0px;
+    font-family: 'Alegreya Sans SC';
+    color: white;
+    font-size: 30px;
+    background-image: url(../../Assets/Guanica_Dry_Forest.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    border: none;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.locatBtns9{
+    height: 80px;
+    width: 375.2px;
+    margin: 3px 0px;
+    font-family: 'Alegreya Sans SC';
+    color: white;
+    font-size: 30px;
+    background-image: url(../../Assets/Coffee.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    border: none;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.locatBtns10{
+    height: 80px;
+    width: 375.2px;
+    margin: 3px 0px;
+    font-family: 'Alegreya Sans SC';
+    color: white;
+    font-size: 30px;
+    background-image: url(../../Assets/Urban_Park.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    border: none;
+    text-shadow: 2px 2px 4px #000000;
+}
