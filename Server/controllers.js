@@ -1,4 +1,4 @@
-
+const stripe = require('stripe')(process.env.SECRET_KEY);
 
 module.exports = {
 
@@ -26,6 +26,7 @@ module.exports = {
         const {id} = req.params;
         const {id: userid} = req.session.user;
 
+        console.log(req.body.quantity)
         if(req.body.quantity) {
             db.add_to_cart([userid, id, req.body.quantity]).then(cart => {
                 return res.send(cart)
@@ -55,9 +56,8 @@ module.exports = {
         const {id} = req.params;
         const {id: userid} = req.session.user
         let newUser = parseInt(id)
-        console.log(userid, newUser)
         const db = req.app.get('db')
-        db.delete([newUser, userid])
+        db.delete([userid, newUser])
         .then(user => res.status(200).send(user))
         .catch(err => console.log(err))
     },

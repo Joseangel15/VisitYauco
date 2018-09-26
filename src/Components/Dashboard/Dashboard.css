@@ -42,11 +42,11 @@
     font-family: 'Alegreya Sans SC';
     color: white;
     font-size: 30px;
-    background-image: url(../../Assets/YaucoMap.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url(../../Assets/YaucoMap.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    opacity: 0.6;
+    opacity: 0.9;
     border: none;
     text-shadow: 2px 2px 4px #000000;
 
@@ -59,11 +59,11 @@
     font-family: 'Alegreya Sans SC';
     color: white;
     font-size: 30px;
-    background-image: url(../../Assets/hisYauco.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url(../../Assets/hisYauco.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    opacity: 0.6;
+    opacity: 0.9;
     border: none;
     text-shadow: 2px 2px 4px #000000;
 
@@ -76,11 +76,11 @@
     font-family: 'Alegreya Sans SC';
     color: white;
     font-size: 30px;
-    background-image: url(../../Assets/Newpaper.png);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url(../../Assets/Newpaper.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    opacity: 0.6;
+    opacity: 0.9;
     border: none;
     text-shadow: 2px 2px 4px #000000;
 
@@ -93,11 +93,12 @@
     font-family: 'Alegreya Sans SC';
     color: white;
     font-size: 30px;
-    background-image: url(../../Assets/PRfood.jpg);
+    /* background-image: url(../../Assets/PRfood.jpg); */
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url(../../Assets/PRfood.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    opacity: 0.6;
+    opacity: 0.9;
     border: none;
     text-shadow: 2px 2px 4px #000000;
 
@@ -110,11 +111,11 @@
     font-family: 'Alegreya Sans SC';
     color: white;
     font-size: 30px;
-    background-image: url(../../Assets/SunnySky.png);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url(../../Assets/SunnySky.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    opacity: 0.6;
+    opacity: 0.9;
     border: none;
     text-shadow: 2px 2px 4px #000000;
 

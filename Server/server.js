@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const express = require('express');
 const controller = require('./controllers')
 const mid = require('./middleware');
+const nodemailer = require('nodemailer');
 const axios = require('axios');
 const app = express();
 
@@ -82,6 +83,42 @@ app.get('/api/logout', (req, res) => {
     console.log(req.session)
     req.session.destroy()
     res.redirect(`${process.env.FRONTEND_DOMAIN}/#/`)
+})
+
+//Node mailer
+
+app.post('/api/message/', (req) => {
+
+    const { name, email, subject, message } = req.body;
+
+    let transporter = nodemailer.createTransport({
+        service: 'gmail',
+        secure: false,
+        port: 25,
+        auth: {
+            user: 'joseangelortiz15@gmail.com',
+            pass: process.env.PASS
+        },
+        tls: {
+            rejectUnauthorized: false
+        }
+    });
+
+    let HelperOptions = {
+        from: name + email,
+        to: 'joseangelortiz15@gmail.com',
+        subject: subject,
+        text: message
+    }
+
+    transporter.sendMail(HelperOptions, (error, info) => {
+        if(error){
+            return console.log(error)
+        }
+        console.log('Message sent')
+        console.log(info)
+    })
+    
 })
 
 //Endpoints

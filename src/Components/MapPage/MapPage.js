@@ -1,13 +1,49 @@
 import React, { Component } from 'react';
 import NavBar from '../Nav/NavBar';
+import GoogleMap from './GoogleMap/GoogleMap';
+import axios from 'axios';
 import './MapPage.css';
+
+const API_KEY = "97fa0ffefd40513b2bcd6715b292ba61"
 
 
 class MapPage extends Component {
+    constructor(props) {
+        super(props)
 
+        this.state = {
+            yaucoWeather: [],
+            yaucoTemp: '',
+            yaucoPr: '',
+            wIcon: ''
+        }
 
+        this.handleWeather = this.handleWeather.bind(this);
+    }
+
+    componentDidMount() {
+        this.handleWeather()
+    }
+
+    handleWeather() {
+
+        axios.get(`http://api.openweathermap.org/data/2.5/weather?q=Yauco,pr&units=imperial&appid=${API_KEY}`).then(res => {
+            this.setState({
+                yaucoWeather: res.data,
+                yaucoTemp: res.data["main"].temp,
+                yaucoPr: res.data["sys"].country,
+                wIcon: res.data["weather"][0].icon,
+            })
+            console.log(this.state.yaucoWeather)
+            console.log(this.state.yaucoWeather["main"].temp)
+            console.log(this.state.wIcon)
+
+        }).catch(err => console.log(err))
+    }
 
     render() {
+
+        
         return (
             <div>
                 <NavBar />
@@ -15,11 +51,17 @@ class MapPage extends Component {
                 <h3>Map & Weather</h3>
 
                 <div className='googleMap'>
-
+                    <GoogleMap />
                 </div>
 
                 <div className='weatherInfo'>
-
+                    <div>
+                        <h3 className='wYauco'>{this.state.yaucoWeather.name}, {this.state.yaucoPr}</h3>
+                        <div>Temp, {this.state.yaucoTemp}°F</div>
+                    </div>
+                    <div className='wStatus'>
+                        <img src={`http://openweathermap.org/img/w/${this.state.wIcon}.png`} alt="" className='Icon'/>
+                    </div>
                 </div>
 
                 <div>

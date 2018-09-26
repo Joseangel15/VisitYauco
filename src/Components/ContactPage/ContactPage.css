@@ -1,0 +1,35 @@
+
+.contactBox{
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactEmail{
+    width: 200px;
+    margin-top: 5px;
+
+}
+
+.contactName{
+    width: 200px;
+}
+
+.contactSubject{
+    width: 250px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.messageBox{
+    width: 250px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.sendBtn{
+    width: 150px;
+    margin: auto;
+}

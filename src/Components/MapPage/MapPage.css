@@ -1,9 +1,19 @@
 
 .googleMap{
     height: 300px;
-    width: 250px;
+    width: 350px;
     border: 1px solid black;
     margin: auto;
+}
+
+.Icon{
+    height: 60px;
+    width: 60px;
+}
+
+.mapBox{
+    width: 200px;
+    height: 200px;
 }
 
 .weatherText{
@@ -16,7 +26,25 @@
 .weatherInfo{
     height: 100px;
     width: 300px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    border-radius: 10px;
     margin: auto;
     margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    background-color: rgb(199, 199, 199);
+}
+
+.wStatus{
+    border: none;
+    border-radius: 10px;
+    height: 60px;
+    width: 60px;
+    margin: 10px 0px;
+    background-color: rgb(158, 244, 255)
+}
+
+.wYauco{
+    margin-bottom: 5px;
 }

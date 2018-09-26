@@ -1,0 +1,69 @@
+
+.agueybana{
+    background-image: url(../../Assets/Agueybana.jpg);
+    height: 100px;
+    width: 125px;
+    background-size: cover;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.deLeon{
+    background-image: url(../../Assets/PoncedeLeon.jpg);
+    height: 150px;
+    width: 125px;
+    background-size: cover;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.history1{
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.history2{
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.muralYauco{
+    background: url(../../Assets/Yauco_mural.jpg) bottom center;
+    height: 200px;
+
+}
+
+.oldYauco{
+    background-image: url(../../Assets/OldYauco.jpg);
+    height: 225px;
+    width: 125px;
+    background-size: cover;
+    border-radius: 5px;
+
+}
+
+.oldYauco2{
+    background: url(../../Assets/OldYauco2.jpg) center;
+    height: 75px;
+    width: 350px;
+    margin: auto;
+    background-size: cover;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.sAWar1{
+    background  
+}
+
+.yMountain{
+    background: url(../../Assets/coffee-plant.jpg) center;
+    height: 75px;
+    width: 350px;
+    margin: auto;
+    background-size: cover;
+    margin-top: 10px;
+    border-radius: 5px;
+}

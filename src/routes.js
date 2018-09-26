@@ -9,6 +9,7 @@ import MapPage from './Components/MapPage/MapPage';
 import StorePage from './Components/StorePage/StorePage';
 import ItemPage from './Components/ItemPage/ItemPage';
 import CartPage from './Components/CartPage/CartPage';
+import ContactPage from './Components/ContactPage/ContactPage';
 
 
 export default (
@@ -23,5 +24,6 @@ export default (
         <Route component={StorePage} path='/Store' />
         <Route component={ItemPage} path='/Item/:id' />
         <Route component={CartPage} path='/Cart' />
+        <Route component={ContactPage} path='/Contact' />
     </Switch>
 )

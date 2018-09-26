@@ -34,6 +34,7 @@ class ItemPage extends Component  {
         axios.post(`/api/addToCart/${this.state.product.id}`)
         .then(res => {
             console.log(res.data)
+            console.log(res.data)
             this.props.addToCart(res.data)
             alert('Your item has been added to the cart')
         })
