@@ -5,6 +5,7 @@ header {
     justify-content: center;
     background-color: rgb(32, 32, 32);
     color: white;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
   }
 
   /* h2 {
@@ -68,7 +69,7 @@ header {
   }
   
   .show-nav {
-    height: 220px;
+    height: 175px;
   }
   
   .animation-example {

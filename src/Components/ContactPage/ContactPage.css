@@ -1,15 +1,19 @@
 
 .contactBox{
     color: white;
-    background-color: black;
+    background-color: rgb(143, 143, 143);
     display: flex;
     flex-direction: column;
+    width: 350px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
 }
 
 .contactEmail{
     width: 200px;
     margin-top: 5px;
-
 }
 
 .contactName{
@@ -31,5 +35,9 @@
 
 .sendBtn{
     width: 150px;
+    height: 30px;
     margin: auto;
+    border: none;
+    background-color: rgb(248, 255, 0);
+    border-radius: 10px;
 }

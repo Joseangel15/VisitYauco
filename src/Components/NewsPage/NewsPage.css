@@ -1,0 +1,23 @@
+
+.allNews{
+    width: 350px;
+    height: auto;
+    margin: auto;
+}
+
+.newsBox{
+    width: 350px;
+    height: auto;
+    background-color: rgb(143, 143, 143);
+    margin: auto;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Alegreya Sans';
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
+}
+
+.newsImage{
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 10px;
+}

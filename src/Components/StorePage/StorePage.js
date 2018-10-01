@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Footer from '../Footer/Footer';
 import NavBar from '../Nav/NavBar';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
@@ -55,9 +56,7 @@ class StorePage extends Component  {
                     {items}
                 </div>
 
-                <div className='dashFooter'>
-
-                </div>
+                <Footer />
 
             </div>
         )

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NavBar from '../Nav/NavBar';
-import GoogleMap from './GoogleMap/GoogleMap';
+import Footer from '../Footer/Footer';
+import GoogleMapReact from './GoogleMap/GoogleMapReact';
 import axios from 'axios';
 import './MapPage.css';
 
@@ -51,7 +52,7 @@ class MapPage extends Component {
                 <h3>Map & Weather</h3>
 
                 <div className='googleMap'>
-                    <GoogleMap />
+                    <GoogleMapReact />
                 </div>
 
                 <div className='weatherInfo'>
@@ -66,12 +67,12 @@ class MapPage extends Component {
 
                 <div>
                     <h2>It's Always Sunny in Yauco</h2>
-                    <p className='weatherText'>Cursus vitae congue mauris rhoncus aenean vel. Vivamus at augue eget arcu dictum varius. Neque aliquam vestibulum morbi blandit cursus risus at ultrices mi. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Venenatis cras sed felis eget velit. Pellentesque habitant morbi tristique senectus et netus et. Venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Faucibus interdum posuere lorem ipsum dolor sit. Eget felis eget nunc lobortis mattis aliquam faucibus. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in. Massa placerat duis ultricies lacus sed. Adipiscing diam donec adipiscing tristique risus nec feugiat. Massa placerat duis ultricies lacus sed turpis. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Lectus nulla at volutpat diam ut venenatis. Adipiscing bibendum est ultricies integer quis auctor. Fringilla urna porttitor rhoncus dolor purus non enim praesent elementum.</p>
+                    <p className='weatherText'>The climate of Yauco in the Köppen climate classification is predominately tropical rainforest. Temperatures throughout the year are warm to hot, averaging near 85 °F (29 °C) in lower elevations and 70 °F (21 °C) in the mountains. Easterly trade winds pass across the island year round while the rainy season stretches from April into November.[1] The relatively cool trade winds are blocked by the mountains of the Cordillera Central which causes rain shadows and sharp variations in the temperature and wind speed over short distances. About a quarter of the average annual rainfall for Puerto Rico occurs during tropical cyclones, which are more frequent during La Niña years.</p>
+
+                    <p className='weatherText'>Temperatures range from 70 to 90 °F (21 to 32 °C) in the lower elevations, while higher elevations in the central part of the island experience temperatures between 61 and 80 °F (16 and 27 °C) year round. The temperature in the south is a few degrees higher than the north. Between winter and summer, there is only a temperature swing of around 6 °F (3.3 °C). Coastal water temperatures average between 77 °F in February to 87 °F in August. The highest temperature ever recorded was 103 °F (39 °C) at San Lorenzo, while the lowest temperature ever recorded was 38 °F (3 °C) at Aibonito.</p>
                 </div>
 
-                <div className='dashFooter'>
-
-                </div>
+                <Footer />
 
             </div>
         )

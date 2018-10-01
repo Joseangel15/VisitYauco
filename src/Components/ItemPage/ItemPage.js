@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
+import Footer from '../Footer/Footer';
 import {connect} from 'react-redux';
 import {addToCart} from '../../Ducks/reducer';
 import NavBar from '../Nav/NavBar';
@@ -61,9 +62,7 @@ class ItemPage extends Component  {
 
                 </div>
 
-                <div className='dashFooter'>
-
-                </div>
+                <Footer />
 
             </div>
         )

@@ -66,17 +66,15 @@ class NavBar extends Component {
                         </div>
                         <div className='nav-menu'>
                             <Link to='/'><h3 style={linkColor}>Home</h3></Link>
-                            <Link to='/Account_Page'><h3 style={linkColor}>About</h3></Link>
                             <h3 style={linkColor} onClick={this.handleLogin}>Store</h3>
                             <Link to='/Contact'><h3 style={linkColor}>Contact</h3></Link>
                             <h3 style={linkColor} onClick={this.logout}>Logout</h3>
                         </div>
                     </nav>
                 </header>
-                <div className={this.state.showNav ? 'show-nav mobile-nav' : ' ' + 'mobile-nav'}>
+                <div className={this.state.showNav ? 'show-nav mobile-nav' : ' mobile-nav'}>
                     <div className="mobile-nav-content">
                         <Link to='/'><h3 style={navMenuStyle}>Home</h3></Link>
-                        <Link to='/About'><h3 style={navMenuStyle}>About</h3></Link>
                         <h3 style={navMenuStyle} onClick={this.handleLogin}>Store</h3>
                         <Link to='/Contact'><h3 style={navMenuStyle}>Contact</h3></Link>
 

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import NavBar from '../../Components/Nav/NavBar';
+import Footer from '../Footer/Footer';
 import axios from 'axios';
 import './ContactPage.css';
 
@@ -64,16 +65,16 @@ class ContactPage extends Component {
                 <NavBar />
 
                 <div>
-                    <h2>About Us</h2>
+                    <h2 style={{fontFamily: 'Alegreya Sans SC'}}>About Us</h2>
                     <div>
-                        <p>Visit Yauco has a mission to promote the natural beauty and interesting tourist attractions of a place I am proud to call home. This website is a student project and it is not officialy endorsed by the local goverment of Yauco.</p>
+                        <p  style={{fontFamily: 'Alegreya Sans', margin: '10px', fontSize: '18px'}}>Visit Yauco has a mission to promote the natural beauty and interesting tourist attractions of a place I am proud to call home. This website is a student project and it is not officialy endorsed by the local goverment of Yauco.</p>
                     </div>
 
                     <div>
-                        <h2>Contact Us</h2>
-                        <p>For more information feel free to send me a message:</p>
+                        <h2 style={{fontFamily: 'Alegreya Sans SC'}}>Contact Us</h2>
+                        <p style={{fontFamily: 'Alegreya Sans', margin: '10px', fontSize: '18px'}}>For more information feel free to send us a message:</p>
                         <div className='contactBox'>
-                            <h3>Contact</h3>
+                            <h3 style={{fontFamily: 'Alegreya Sans SC'}}>Contact</h3>
                             <div>
                                 <input type="text" name="name" id="" placeholder='Name*' className='contactName' value={this.state.name} onChange={this.inputHandler} />
                                 <input type="text" name='email' placeholder='Email*' className='contactEmail' value={this.state.email} onChange={this.inputHandler} />
@@ -81,14 +82,12 @@ class ContactPage extends Component {
                             <input type="text" name='subject' placeholder='Subject' className='contactSubject' value={this.state.subject} onChange={this.inputHandler} />
                             <textarea name="message" id="" cols="30" rows="10" placeholder='Message' className='messageBox' value={this.state.message} onChange={this.inputHandler}></textarea>
 
-                            <button className='sendBtn' onClick={this.sendEmail}>Send</button>
+                            <button className='sendBtn' onClick={this.sendEmail} style={{fontFamily: 'Alegreya Sans SC', fontSize: '18px'}}>Send</button>
                         </div>
                     </div>
                 </div>
 
-                <div className='dashFooter'>
-
-                </div>
+                <Footer />
             </div>
         )
     }

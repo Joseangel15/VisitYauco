@@ -6,6 +6,7 @@
     background-size: cover;
     margin: 20px;
     border-radius: 5px;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
 }
 
 .deLeon{
@@ -15,24 +16,55 @@
     background-size: cover;
     margin: 20px;
     border-radius: 5px;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
+}
+
+.escudo{
+    background: url(../../Assets/Escudo.jpg) center;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    margin-left: 10px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
 }
 
 .history1{
     display: flex;
-    justify-content: flex-start;
-    height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .history2{
     display: flex;
     justify-content: flex-start;
+}
+
+.iglesiaYauco{
+    background: url(../../Assets/IglesiadeYauco.jpg);
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+    background-size: cover;
+    border-radius: 5px;    
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
+}
+
+.miniBox{
+    margin: auto;
+    display: flex;
+    justify-content: center;
     height: 100%;
 }
 
 .muralYauco{
-    background: url(../../Assets/Yauco_mural.jpg) bottom center;
-    height: 200px;
-
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(../../Assets/Yauco_mural.jpg) center bottom;
+    height: 250px;
+    color: white;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
+    text-shadow: 2px 2px 4px #000000;
+    opacity: 1.9;
+    padding: 10px;
 }
 
 .oldYauco{
@@ -41,7 +73,7 @@
     width: 125px;
     background-size: cover;
     border-radius: 5px;
-
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
 }
 
 .oldYauco2{
@@ -52,10 +84,30 @@
     background-size: cover;
     margin-top: 10px;
     border-radius: 5px;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
 }
 
 .sAWar1{
-    background  
+      background: url(../../Assets/NelsonMiles.JPG);
+      height: 150px;
+      width: 150px;
+      margin-right: 10px;
+      margin-top: 10px;
+      margin-left: 10px;
+      background-size: cover;
+      border-radius: 5px;
+      box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
+}
+
+.sAWar2{
+    background: url(../../Assets/Officers.jpg);
+    width: 150px;
+    height: 150px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
 }
 
 .yMountain{
@@ -66,4 +118,5 @@
     background-size: cover;
     margin-top: 10px;
     border-radius: 5px;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
 }

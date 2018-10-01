@@ -2,19 +2,20 @@
 .destinationsTitle{
     font-family: 'Alegreya Sans SC';
     font-size: 26px;
+    margin: 40px;
 }
 
 .destinBtns{
     display: flex;
     flex-direction: column;
     height: 100%;
-    margin: auto;
+    
 }
 
 .locatBtns1{
     height: 80px;
     width: 375.2px;
-    margin: 3px 0px;
+    margin: auto;
     font-family: 'Alegreya Sans SC';
     color: white;
     font-size: 30px;
@@ -27,149 +28,212 @@
     opacity: 0.9;
     border: none;
     text-shadow: 2px 2px 4px #000000;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
 }
 
 .locatBtns2{
     height: 80px;
     width: 375.2px;
-    margin: 3px 0px;
+    margin: auto;
     font-family: 'Alegreya Sans SC';
     color: white;
     font-size: 30px;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url(../../Assets/GUÁNICA-Playa.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(../../Assets/GUÁNICA-Playa.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
     opacity: 0.9;
     border: none;
     text-shadow: 2px 2px 4px #000000;
-    
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
 }
 
 .locatBtns3{
     height: 80px;
     width: 375.2px;
-    margin: 3px 0px;
+    margin: auto;
     font-family: 'Alegreya Sans SC';
     color: white;
     font-size: 30px;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url(../../Assets/VolkyLand.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(../../Assets/VolkyLand.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     opacity: 0.9;
     border: none;
     text-shadow: 2px 2px 4px #000000;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
 }
 
 .locatBtns4{
     height: 80px;
     width: 375.2px;
-    margin: 3px 0px;
+    margin: auto;
     font-family: 'Alegreya Sans SC';
     color: white;
     font-size: 30px;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url(../../Assets/Iglesia_Yauco.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(../../Assets/Iglesia_Yauco.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     opacity: 0.9;
     border: none;
     text-shadow: 2px 2px 4px #000000;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
 }
 
 .locatBtns5{
     height: 80px;
     width: 375.2px;
-    margin: 3px 0px;
+    margin: auto;
     font-family: 'Alegreya Sans SC';
     color: white;
     font-size: 30px;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url(../../Assets/guilliganvideo1.png);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(../../Assets/guilliganvideo1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     opacity: 0.9;
     border: none;
     text-shadow: 2px 2px 4px #000000;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
 }
 
 .locatBtns6{
     height: 80px;
     width: 375.2px;
-    margin: 3px 0px;
+    margin: auto;
     font-family: 'Alegreya Sans SC';
     color: white;
     font-size: 30px;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url(../../Assets/Susua_Forest.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(../../Assets/Susua_Forest.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     opacity: 0.9;
     border: none;
     text-shadow: 2px 2px 4px #000000;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
 }
 
 .locatBtns7{
     height: 80px;
     width: 375.2px;
-    margin: 3px 0px;
+    margin: auto;
     font-family: 'Alegreya Sans SC';
     color: white;
     font-size: 30px;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url(../../Assets/Yaucromatic-3-2000x1200.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(../../Assets/Yaucromatic-3-2000x1200.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
     opacity: 0.9;
     border: none;
     text-shadow: 2px 2px 4px #000000;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
 }
 
 .locatBtns8{
     height: 80px;
     width: 375.2px;
-    margin: 3px 0px;
+    margin: auto;
     font-family: 'Alegreya Sans SC';
     color: white;
     font-size: 30px;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url(../../Assets/Guanica_Dry_Forest.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(../../Assets/Guanica_Dry_Forest.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     opacity: 0.9;
     border: none;
     text-shadow: 2px 2px 4px #000000;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
 }
 
 .locatBtns9{
     height: 80px;
     width: 375.2px;
-    margin: 3px 0px;
+    margin: auto;
     font-family: 'Alegreya Sans SC';
     color: white;
     font-size: 30px;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url(../../Assets/Coffee.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(../../Assets/Coffee.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     opacity: 0.9;
     border: none;
     text-shadow: 2px 2px 4px #000000;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
 }
 
 .locatBtns10{
     height: 80px;
     width: 375.2px;
-    margin: 3px 0px;
+    margin: auto;
     font-family: 'Alegreya Sans SC';
     color: white;
     font-size: 30px;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url(../../Assets/Urban_Park.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(../../Assets/Urban_Park.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     opacity: 0.9;
     border: none;
     text-shadow: 2px 2px 4px #000000;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
+}
+
+.newP{
+    /* border: 1px solid black; */
+    padding-top: 5px;
+    width: 350px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Alegreya Sans';
+    background-color: rgb(143, 143, 143);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
+}
+
+.susuaPic{
+    background: url(../../Assets/bosqueSusua.jpg) center;
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
 }

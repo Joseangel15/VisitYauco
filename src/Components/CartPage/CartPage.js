@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NavBar from '../Nav/NavBar';
 import axios from 'axios';
+import Footer from '../Footer/Footer';
 import { connect } from 'react-redux';
 import { addToCart, removeFromCart, getUserData } from '../../Ducks/reducer'
 import StripeCheckout from 'react-stripe-checkout';
@@ -129,9 +130,7 @@ class CartPage extends Component {
                     </div>
                 </div>
 
-                <div className='dashFooter'>
-
-                </div>
+                <Footer />
 
             </div>
         )
