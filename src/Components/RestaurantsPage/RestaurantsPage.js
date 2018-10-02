@@ -10,7 +10,7 @@ class RestaurantsPage extends Component  {
 
     render() {
         return(
-            <div>
+            <div className='bodyBack'>
                 <NavBar/>
                 <h1>The Best Puerto Rican Cuisine</h1>
 

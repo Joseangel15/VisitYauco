@@ -34,25 +34,27 @@ class StorePage extends Component  {
             return (
                 <div key={el.id}>
                     <div className='productBox'>
-                        <Link to={`/Item/${el.id}`}><img src={el.item_image} alt="" className='productPic'/></Link>
-                        <h5>{el.item_name}</h5>
-                        <h5>{el.item_price}</h5>                        
+                        <div style={{height: '150px', width: '150px', margin: 'auto', marginTop: '5px'}}>
+                            <Link to={`/Item/${el.id}`}><img src={el.item_image} alt="" className='productPic'/></Link>
+                        </div>
+                        <h4 style={{fontFamily: 'Alegreya Sans'}}>{el.item_name}</h4>
+                        <h5>${el.item_price}</h5>                        
                     </div>
                 </div>
             )
         })
 
         return(
-            <div>
+            <div className='bodyBack'>
                 <NavBar/>
                 <div>
                     <Link to='/Cart'><button className='cartBtn'></button></Link>
                 </div>
                 <div className='pageTitle'>
-                    <h1>Share your love of paradise</h1>
+                    <h1 style={{fontFamily: 'Alegreya Sans SC'}}>A Gift to Remember</h1>
                 </div>
 
-                <div>
+                <div className='Products'>
                     {items}
                 </div>
 

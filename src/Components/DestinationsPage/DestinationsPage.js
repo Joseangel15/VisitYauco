@@ -20,7 +20,7 @@ class DestinationsPage extends Component {
                             <h4>Luchetti Lake</h4>
                         </div>
 
-                        <div style={{ width: '370px', height: 'auto', margin: 'auto' }}>
+                        <div className='destInfo'>
                             <h5 style={{ marginBottom: '0px' }}>Address</h5>
                             <h6 style={{ marginTop: '0px' }}>34WR+HG Diego Hernández, Yauco, Puerto Rico 00698</h6>
                             <div className='newP'>
@@ -38,7 +38,7 @@ class DestinationsPage extends Component {
                             <h4>Ballena Beach</h4>
                         </div>
 
-                        <div style={{ width: '370px', height: 'auto', margin: 'auto' }}>
+                        <div className='destInfo'>
                             <h5 style={{ marginBottom: '0px' }}>Address</h5>
                             <h6 style={{ marginTop: '0px' }}>PR-333, Guánica 00653, Puerto Rico</h6>
                             <div className='newP'>
@@ -56,7 +56,7 @@ class DestinationsPage extends Component {
                             <h4>Volkyland</h4>
                         </div>
 
-                        <div style={{ width: '370px', height: 'auto', margin: 'auto' }}>
+                        <div className='destInfo'>
                             <h5 style={{ marginBottom: '0px' }}>Address</h5>
                             <h6 style={{ marginTop: '0px' }}>13 Calle 2, Yauco, 00698, Puerto Rico</h6>
                             <div className='newP'>
@@ -74,7 +74,7 @@ class DestinationsPage extends Component {
                             <h4>Historic City Center</h4>
                         </div>
 
-                        <div style={{ width: '370px', height: 'auto', margin: 'auto' }}>
+                        <div className='destInfo'>
                             <h5 style={{ marginBottom: '0px' }}>Address</h5>
                             <h6 style={{ marginTop: '0px' }}>Calle Mattei Lluveras, Yauco Puerto Rico 00698</h6>
                             <div className='newP'>
@@ -92,7 +92,7 @@ class DestinationsPage extends Component {
                             <h4>Gilligan's Island</h4>
                         </div>
 
-                        <div style={{ width: '370px', height: 'auto', margin: 'auto' }}>
+                        <div className='destInfo'>
                             <h5 style={{ marginBottom: '0px' }}>Address</h5>
                             <h6 style={{ marginTop: '0px' }}>Guánica 00653, Puerto Rico</h6>
                             <div className='newP'>
@@ -110,13 +110,14 @@ class DestinationsPage extends Component {
                             <h4>Susua State Forest</h4>
                         </div>
 
-                        <div style={{ width: '370px', height: 'auto', margin: 'auto' }}>
+                        <div className='destInfo'>
                             <h5 style={{ marginBottom: '0px' }}>Address</h5>
                             <h6 style={{ marginTop: '0px' }}>Sabana Grande, 00637, Puerto Rico</h6>
                             <div className='newP' style={{paddingBottom: '10px'}}>
                                 <p style={{ textAlign: 'left', margin: '10px' }}>Among the State Forests of Puerto Rico, the Susúa Forest  is located in a zone of climatic transition between the dry forests and the humid, transition that is done evident upon descending the sun, which is unique among the other State Forests; besides showing a combination of volcanic floors and of serpentinita.  The vegetation is comprised of 157 species of trees, of which 18 are rare or they are found in danger of extinction.  Although Susúa is a place little studied it, has been attributed with a high diversity of species. </p>
 
-                                <div className='susuaPic'></div>
+                                <iframe width="300" height="200" style={{margin: '20px', border: 'none'}} src="https://www.youtube.com/embed/Ibhy4KiG2Mw" title="Gilligan's Island">
+                                </iframe>
 
                             </div>
                         </div>
@@ -127,7 +128,7 @@ class DestinationsPage extends Component {
                             <h4>Y2 Yaucromatic</h4>
                         </div>
 
-                        <div style={{ width: '370px', height: 'auto', margin: 'auto' }}>
+                        <div className='destInfo'>
                             <h5 style={{ marginBottom: '0px' }}>Address</h5>
                             <h6 style={{ marginTop: '0px' }}>Calle Pacheco, Yauco, 00698, Puerto Rico</h6>
                             <div className='newP'>
@@ -145,7 +146,7 @@ class DestinationsPage extends Component {
                             <h4>Guanica Dry Forest</h4>
                         </div>
 
-                        <div style={{ width: '370px', height: 'auto', margin: 'auto' }}>
+                        <div className='destInfo'>
                             <h5 style={{ marginBottom: '0px' }}>Address</h5>
                             <h6 style={{ marginTop: '0px' }}>Guanica, 00653, Puerto Rico</h6>
                             <div className='newP'>
@@ -163,7 +164,7 @@ class DestinationsPage extends Component {
                             <h4>Coffee Festival</h4>
                         </div>
 
-                        <div style={{ width: '370px', height: 'auto', margin: 'auto' }}>
+                        <div className='destInfo'>
                             <h5 style={{ marginBottom: '0px' }}>Address</h5>
                             <h6 style={{ marginTop: '0px' }}>Plaza de armas de Yauco</h6>
                             <div className='newP'>
@@ -181,7 +182,7 @@ class DestinationsPage extends Component {
                             <h4>Yauco Urban Park</h4>
                         </div>
 
-                        <div style={{ width: '370px', height: 'auto', margin: 'auto' }}>
+                        <div className='destInfo'>
                             <h5 style={{ marginBottom: '0px' }}>Address</h5>
                             <h6 style={{ marginTop: '0px' }}>Yauco, 00698, Puerto Rico</h6>
                             <div className='newP'>

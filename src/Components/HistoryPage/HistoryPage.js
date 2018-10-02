@@ -9,7 +9,7 @@ class HistoryPage extends Component {
 
     render() {
         return (
-            <div>
+            <div className='bodyBack'>
                 <NavBar />
 
                 <h1 style={{fontFamily: 'Alegreya Sans SC'}}> Discover the History of Yauco</h1>
@@ -87,7 +87,7 @@ class HistoryPage extends Component {
 
                         <p style={{ width: '325px', margin: 'auto', marginBottom: '20px', textAlign: 'left', fontFamily: 'Alegreya Sans', fontSize: '18px' }}>From coffee plantations to beautiful unspoiled coasts; Visitors to this picturesque destination will not only find significant historical sights, architectural wonders, quaint shops and modern plazas, but spectacular nature reserves and forest reserves that are located outside the city. Yauco is a unique city with its own mixture of culture and tradition and is one of the highly recommended destinations in Puerto Rico.</p>
 
-                        <div style={{ display: 'flex', justifyContent: 'center', heigth: '100%', marginBottom: '20px' }}>
+                        <div style={{ display: 'flex', justifyContent: 'center', heigth: '100%', marginBottom: '100px' }}>
                             <div className='iglesiaYauco'></div>
                             <div className='escudo'></div>
                         </div>

@@ -1,64 +1,68 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import axios from 'axios';
 import Footer from '../Footer/Footer';
-import {connect} from 'react-redux';
-import {addToCart} from '../../Ducks/reducer';
+import { connect } from 'react-redux';
+import { addToCart } from '../../Ducks/reducer';
 import NavBar from '../Nav/NavBar';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './ItemPage.css';
 
 
-class ItemPage extends Component  {
-    constructor(props){
+class ItemPage extends Component {
+    constructor(props) {
         super(props)
 
         this.state = {
 
             product: {},
-            
+
         }
 
         this.handleAddToCart = this.handleAddToCart.bind(this);
     }
-    
-    componentDidMount () {
+
+    componentDidMount() {
 
         axios.get(`/api/getItem/${this.props.match.params.id}`).then(res => {
             this.setState({
                 product: res.data[0],
-                
+
             })
         })
     }
-    
-    handleAddToCart () {
+
+    handleAddToCart() {
         axios.post(`/api/addToCart/${this.state.product.id}`)
-        .then(res => {
-            console.log(res.data)
-            console.log(res.data)
-            this.props.addToCart(res.data)
-            alert('Your item has been added to the cart')
-        })
+            .then(res => {
+                console.log(res.data)
+                console.log(res.data)
+                this.props.addToCart(res.data)
+                alert('Your item has been added to the cart')
+            })
     }
 
     render() {
-        return(
-            <div>
-                <NavBar/>
+        return (
+            <div className='bodyBack'>
+                <NavBar />
                 <div>
                     <Link to='/Cart'><button className='cartBtn'></button></Link>
                 </div>
 
-                <h1>{this.state.product.item_name}</h1>
+                <div className='itemBox'>
 
-                <div>${this.state.product.item_price}</div>
+                    <h1 style={{ fontFamily: 'Alegreya Sans' }}>{this.state.product.item_name}</h1>
 
-                <div>
+                    <div>${this.state.product.item_price}</div>
+
                     <div>
-                        <img src={this.state.product.item_image} alt="" className='mainItemPic'/>
-                    </div>
+                        <div>
+                            <img src={this.state.product.item_image} alt="" className='mainItemPic' />
+                        </div>
 
-                    <button onClick={() => {this.handleAddToCart()}}>Add to Cart</button>
+                        <button className='buyBtn' onClick={() => { this.handleAddToCart() }}>Add to Cart</button>
+
+                    </div>
 
                 </div>
 
@@ -67,7 +71,7 @@ class ItemPage extends Component  {
             </div>
         )
     }
-    
+
 }
 
 function mapStateToProps(state) {
@@ -76,4 +80,4 @@ function mapStateToProps(state) {
     }
 }
 
-export default connect(mapStateToProps, {addToCart})(ItemPage);
+export default connect(mapStateToProps, { addToCart })(ItemPage);

@@ -1,4 +1,10 @@
 
+.aboutUs{
+    margin: 10px;
+    font-Family: 'Alegreya Sans';
+    font-Size: 18px;
+}
+
 .contactBox{
     color: white;
     background-color: rgb(143, 143, 143);
@@ -40,4 +46,19 @@
     border: none;
     background-color: rgb(248, 255, 0);
     border-radius: 10px;
+}
+
+@media(min-width: 700px){
+
+    .aboutUs{
+        margin: 10px 200px;
+    }
+}
+
+
+@media(min-width: 1000px){
+
+    .aboutUs{
+        margin: 10px 400px;
+    }
 }

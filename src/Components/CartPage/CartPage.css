@@ -1,7 +1,42 @@
 
+.cartBoxes{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    background-color: rgb(143, 143, 143);
+    margin: 15px 5px;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Alegreya Sans';
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
+}
+
 .cartItemPic{
     width: 100px;
     height: 100px;
+    margin: auto;
+}
+
+.removeBtn{
+    height: 30px;
+    width: 75px,;
+    margin: auto; 
+    border: none; 
+    border-Radius: 5px;
+    background-Color: rgb(248, 255, 0);
+}
+
+.userBox{
+    /* border: 1px solid black; */
+    padding: 10px;
+    width: 250px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: rgb(98, 98, 98);
+    color: white;
+    font-family: 'Alegreya Sans SC';
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
 }
 
 .userPic{

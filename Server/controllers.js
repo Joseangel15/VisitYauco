@@ -65,6 +65,7 @@ module.exports = {
     deleteAllCart: (req, res, next) => {
         const { id: userid } = req.session.user
         const db = req.app.get('db')
+        console.log(userid)
         db.delete_all_cart([userid]).then(user => res.status(200).send(user)).catch(err => console.log(err))
     },
 

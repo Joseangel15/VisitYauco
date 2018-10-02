@@ -61,16 +61,16 @@ class ContactPage extends Component {
 
     render() {
         return (
-            <div>
+            <div className='bodyBack'>
                 <NavBar />
 
                 <div>
                     <h2 style={{fontFamily: 'Alegreya Sans SC'}}>About Us</h2>
                     <div>
-                        <p  style={{fontFamily: 'Alegreya Sans', margin: '10px', fontSize: '18px'}}>Visit Yauco has a mission to promote the natural beauty and interesting tourist attractions of a place I am proud to call home. This website is a student project and it is not officialy endorsed by the local goverment of Yauco.</p>
+                        <p  className='aboutUs'>Visit Yauco has a mission to promote the natural beauty and interesting tourist attractions of a place I am proud to call home. This website is a student project and it is not officialy endorsed by the local goverment of Yauco.</p>
                     </div>
 
-                    <div>
+                    <div style={{marginBottom: '100px'}}>
                         <h2 style={{fontFamily: 'Alegreya Sans SC'}}>Contact Us</h2>
                         <p style={{fontFamily: 'Alegreya Sans', margin: '10px', fontSize: '18px'}}>For more information feel free to send us a message:</p>
                         <div className='contactBox'>

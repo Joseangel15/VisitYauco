@@ -1,4 +1,4 @@
-DELETE * from Ycart where userid = $1;
+DELETE from Ycart where userid = $1;
 
 SELECT * from Ycart c
 JOIN Yitems i on

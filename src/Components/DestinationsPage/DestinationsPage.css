@@ -9,7 +9,14 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    background-color: rgba(255, 255, 255, 0.438);
     
+}
+
+.destInfo{
+    width: 370px;
+    height: auto;
+    margin: auto; 
 }
 
 .locatBtns1{
@@ -220,7 +227,7 @@
     width: 350px;
     height: auto;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: white;
     font-size: 18px;
     font-family: 'Alegreya Sans';
@@ -236,4 +243,133 @@
     margin: auto;
     margin-bottom: 20px;
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
+}
+
+@media(min-width: 700px){
+
+    .locatBtns1{
+        width: 700px;
+    }
+
+    .locatBtns2{
+        width: 700px;
+    }
+
+    .locatBtns3{
+        width: 700px;
+    }
+
+    .locatBtns4{
+        width: 700px;
+    }
+
+    .locatBtns5{
+        width: 700px;
+    }
+
+    .locatBtns6{
+        width: 700px;
+    }
+
+    .locatBtns7{
+        width: 700px;
+    }
+
+    .locatBtns8{
+        width: 700px;
+    }
+
+    .locatBtns9{
+        width: 700px;
+    }
+
+    .locatBtns10{
+        width: 700px;
+    }
+
+    .newP{
+        width: 500px;
+        height: auto;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .destInfo{
+        width: 500px;
+    }
+
+    .destinBtns{
+        
+        width: 700px;
+        margin: auto;
+        margin-bottom: 100px;
+        border-radius: 10px;
+    }
+    
+}
+
+@media(min-width: 1000px){
+
+    .locatBtns1{
+        width: 900px;
+    }
+    
+    .locatBtns2{
+        width: 900px;
+    }
+
+    .locatBtns3{
+        width: 900px;
+    }
+
+    .locatBtns4{
+        width: 900px;
+    }
+
+    .locatBtns5{
+        width: 900px;
+    }
+
+    .locatBtns6{
+        width: 900px;
+    }
+
+    .locatBtns7{
+        width: 900px;
+    }
+
+    .locatBtns8{
+        width: 900px;
+    }
+
+    .locatBtns9{
+        width: 900px;
+    }
+
+    .locatBtns10{
+        width: 900px;
+    }
+
+    .newP{
+        width: 700px;
+        height: auto;
+        margin: auto;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+
+    .destInfo{
+        width: auto;
+    }
+
+    .destinBtns{
+        
+        width: 900px;
+        margin: auto;
+        margin-bottom: 100px;
+        border-radius: 10px;
+    }
+
 }

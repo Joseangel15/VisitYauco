@@ -3,6 +3,7 @@
     height: 300px;
     width: 350px;
     border: 1px solid black;
+    /* border-radius: 10px; */
     margin: auto;
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
 }
@@ -50,4 +51,15 @@
 
 .wYauco{
     margin-bottom: 5px;
+}
+
+@media(min-width: 1000px){
+
+    .googleMap{
+        height: 400px;
+        width: 800px;
+        border: 1px solid black;
+        margin: auto;
+        box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
+    }
 }

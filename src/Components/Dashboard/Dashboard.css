@@ -1,10 +1,12 @@
 
 .alcalBox{
-    width: 375px;
+    width: 100%;
     height: 250px;
     background: url(../../Assets/Alcaldia.jpg) center;
     background-repeat: no-repeat;
     margin: auto;
+    margin-top: 10px;
+    background-size: cover;
 }
 
 .bodyBack {
@@ -14,15 +16,29 @@
     left: 0;
     min-width: 100%;
     min-height: 100%;
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    /* padding-bottom: 75px; */
 
+    background: radial-gradient(farthest-side ellipse at 50% 0, hsl(55, 100%, 95%), hsl(54, 48%, 70%) 80%, hsl(54, 83%, 33%) 120%);
+    right: 0;
+    left: 0;
+    
+    transition: 2s;
+ 
 }
 
 .cerroBox {
-    width: 375px;
+    width: 100%;
     height: 250px;
     background: url(../../Assets/Yauco_cerro.jpg) center;
     background-repeat: no-repeat;
     margin: auto;
+    margin-top: 10px;
+    background-size: cover;
+    
 }
 
 /* .cerroBox {
@@ -43,6 +59,8 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .dashMenuBtns1{
@@ -60,6 +78,7 @@
     opacity: 0.9;
     border: none;
     text-shadow: 2px 2px 4px #000000;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
 
 }
 
@@ -77,6 +96,7 @@
     opacity: 0.9;
     border: none;
     text-shadow: 2px 2px 4px #000000;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
 
 }
 
@@ -94,6 +114,7 @@
     opacity: 0.9;
     border: none;
     text-shadow: 2px 2px 4px #000000;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
 
 }
 
@@ -112,6 +133,7 @@
     opacity: 0.9;
     border: none;
     text-shadow: 2px 2px 4px #000000;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
 
 }
 
@@ -129,7 +151,15 @@
     opacity: 0.9;
     border: none;
     text-shadow: 2px 2px 4px #000000;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
 
+}
+
+.flagAndShield{
+    border: 1px solid;
+    height: 500px;
+    margin-Bottom: 100px;
+    margin-Top: 20px;
 }
 
 .mainYauco{
@@ -144,46 +174,166 @@
     height: 190px;
 }
 
+.middleBar{
+    width: 100%;
+    height: 75px;
+    background-color: black;
+    /* padding: 10px; */
+}
+
+.middleBarText{
+    color: white;
+    font-family: 'Alegreya Sans SC';
+    letter-spacing: 3px;
+    margin: auto;
+    
+}
+
 .lakeBox{
-    width: 375px;
+    width: 100%;
     height: 250px;
     background: url(../../Assets/el_lago_luchetti_by_tanama.jpg) center;
     background-repeat: no-repeat;
     margin: auto;
+    margin-top: 10px;
+    background-size: cover;
 }
 
 .seaBox{
-    width: 375px;
+    width: 100%;
     height: 250px;
     background: url(../../Assets/Great-Coast.jpg) center;
     background-repeat: no-repeat;
     margin: auto;
+    margin-top: 10px;
 }
 
-#slideshow { 
-    margin: 50px auto; 
-    position: relative; 
-    width: 240px; 
-    height: 240px; 
-    padding: 10px; 
-    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
-}
-
-#slideshow > div { 
-    position: absolute; 
-    top: 10px; 
-    left: 10px; 
-    right: 10px; 
-    bottom: 10px; 
-}
-
-/* .mainYauco{
-    color: White;
-    border: 4px solid;
-    background: rgb(40, 41, 0);
-    mix-blend-mode: multiply;
-    font: bolder 26vh 'Alfa Slab One';
-    text-align: center;
-    margin: 0;
+.white{
+    font-size: 60px;
+    margin: auto;
+    background-image: url(../../Assets/sun-solid.svg);
     
-} */
+}
+
+.yaucoFacts{
+    margin: auto;
+    margin-bottom: 35px;
+    height: auto;
+    /* padding: 5px; */
+    /* border: 1px solid black; */
+    width: 250px;
+    background-color: rgb(255, 225, 0);
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
+    
+}
+
+.yFlag{
+    background-image: url(../../Assets/FlagYAuco.gif);
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+    background-repeat: no-repeat;
+}
+
+.yShield{
+
+}
+
+
+@media(min-width: 700px){
+
+    .btnsAndFacts{
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 700px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .cerroBox{
+        width: 100%;
+        height: 250px;
+        background-repeat: no-repeat;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .lakeBox{
+        width: 100%;
+        height: 250px;
+        background-repeat: no-repeat;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .alcalBox{
+        width: 100%;
+        height: 250px;
+        background-repeat: no-repeat;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .seaBox{
+        width: 100%;
+        height: 250px;
+        background-repeat: no-repeat;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .dashBtns{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 400px;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .mainYauco{
+        
+        font: bolder 180px 'Alfa Slab One';
+        padding-top: 0px;
+        height: 240px;
+    }
+
+    
+}
+
+@media(min-width: 1000px){
+
+    .cerroBox{
+        width: 100%;
+        height: 250px;
+        
+    }
+
+    .lakeBox{
+        width: 100%;
+        height: 250px;
+        
+    }
+    .alcalBox{
+        width: 100%;
+        height: 250px;
+        
+    }
+
+    .seaBox{
+        width: 100%;
+        height: 250px;
+        
+    }
+
+    .mainYauco{
+        
+        font: bolder 180px 'Alfa Slab One';
+        padding-top: 0px;
+        height: 240px;
+    }
+}

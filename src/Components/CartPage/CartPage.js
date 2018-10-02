@@ -9,16 +9,29 @@ import './CartPage.css';
 
 
 class CartPage extends Component {
+    constructor(props) {
+        super(props)
+
+
+
+        this.handleAmount = this.handleAmount.bind(this)
+        this.handleDelete = this.handleDelete.bind(this)
+        this.handleUpdateQuantity = this.handleUpdateQuantity.bind(this)
+        this.handleProductPrice = this.handleProductPrice.bind(this)
+        this.handleClose = this.handleClose.bind(this)
+        this.handleOnToken = this.handleOnToken.bind(this)
+        this.handleTotal = this.handleTotal.bind(this)
+    }
 
     componentDidMount() {
         if (this.props.cart.length === 0) {
             axios.get('/api/cart').then(res => this.props.addToCart(res.data))
                 .catch(err => console.log(err))
-            axios.get('/api/user/user-data').then(res => {
-                this.props.getUserData(res.data)
-                console.log(res.data)
-            })
         }
+        axios.get('/api/user/user-data').then(res => {
+            this.props.getUserData(res.data)
+            console.log(res.data)
+        })
     }
 
     handleDelete(id, user) {
@@ -35,7 +48,9 @@ class CartPage extends Component {
     }
 
     handleProductPrice(price, qty) {
-        return price * qty
+        let num = price * qty;
+        let newNum = num.toFixed(2);
+        return newNum;
     }
 
 
@@ -56,19 +71,22 @@ class CartPage extends Component {
         let { user } = this.props
         return (
             <div>
-                <img src={user.user_pic} alt="" className='userPic' />
+                <img src={user.user_pic} alt="" className='userPic' style={{ borderRadius: '10px' }} />
                 <h3>{user.user_name}</h3>
             </div>
         )
     }
 
     handleClose() {
-        axios.delete('/api/delcart').then(res => { this.props.removeFromCart(res.data) }).then(alert('Your payment has been processed')).catch(err => console.log(err))
+        axios.delete('/api/delcart')
+            .then(res => { this.props.removeFromCart(res.data) })
+            .then(alert('Your payment has been processed'))
+            .catch(err => console.log(err))
     }
 
     handleOnToken(token) {
         token.card = void 0;
-        axios.post(`/api/payment`, { token, amount: this.handleAmount }).then(res => { console.log(res) })
+        axios.post('/api/payment', { token, amount: this.handleAmount() }).then(res => { console.log(res) })
     }
 
     createListItems() {
@@ -77,25 +95,28 @@ class CartPage extends Component {
                 console.log(this.props.cart)
                 return (
                     <div key={cart.id}>
-                        <div>
+                        <div className='cartBoxes'>
                             <img src={cart.item_image} alt="" className='cartItemPic' />
-                            <h3>{cart.item_name}</h3>
-                            <h1>Price ${this.handleProductPrice(cart.item_price, cart.quantity)}.00</h1>
-                            <button onClick={() => this.handleDelete(cart.id, cart.userid)}>Remove</button>
-                            <h3>Quantity</h3>
 
-                            <select defaultValue={cart.quantity} name="" id="" onChange={(e) => this.handleUpdateQuantity(e.target.value, cart.product_id)}>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                            </select>
+                            <div style={{margin: 'auto'}}>
+                                <h3 style={{marginBottom: '0px'}}>{cart.item_name}</h3>
+                                <h4 style={{marginBottom: '0px', marginTop: '0px'}}>Quantity</h4>
+
+                                <select defaultValue={cart.quantity} name="" id="" onChange={(e) => this.handleUpdateQuantity(e.target.value, cart.product_id)}>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <h3 style={{marginTop: '5px'}}>Price ${this.handleProductPrice(cart.item_price, cart.quantity)}</h3>
+                            </div>
+                            <button className='removeBtn' onClick={() => this.handleDelete(cart.id, cart.userid)} style={{height: '30px', width: '75px', margin: 'auto', border: 'none', borderRadius: '5px', backgroundColor: 'rgb'}}>Remove</button>
                         </div>
                     </div>
                 )
@@ -105,17 +126,17 @@ class CartPage extends Component {
 
     render() {
         return (
-            <div>
+            <div className='bodyBack'>
                 <NavBar />
-                <h1>Cart</h1>
-                <h3>Total:{this.handleTotal()}</h3>
-                <div>
-                    <div>
+                <h1 style={{fontFamily: 'Alegreya Sans SC'}}>Cart</h1>
+                <div style={{ marginBottom: '100px' }}>
+                    <div className='userBox'>
                         {this.handleUserInfo()}
+                        <h2>Total:${this.handleTotal()}</h2>
                     </div>
 
                     <div>
-                        {this.props.cart === 0 ? <h2>No items in Cart</h2> : this.createListItems()}
+                        {this.props.cart == 0 ? <h2>No items in Cart</h2> : this.createListItems()}
                     </div>
 
                     <div>

@@ -52,7 +52,7 @@ class NewsPage extends Component {
 
 
         return (
-            <div>
+            <div className='bodyBack'>
                 <NavBar />
                 <h1>News From Paradise</h1>
 
