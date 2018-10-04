@@ -4,7 +4,7 @@ const massive = require('massive');
 const bodyParser = require('body-parser');
 const express = require('express');
 const controller = require('./controllers')
-const mid = require('./middleware');
+// const mid = require('./middleware');
 const nodemailer = require('nodemailer');
 const axios = require('axios');
 const app = express();
@@ -35,7 +35,7 @@ massive(CONNECTION_STRING).then(dbInstance => {
 }).catch(err => console.log(err));
 
 app.use(bodyParser.json())
-app.use(mid.bypassAuthInDevelop)
+// app.use(mid.bypassAuthInDevelop)
 
 //Auth0 config
 
