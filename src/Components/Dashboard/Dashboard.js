@@ -56,16 +56,34 @@ class Dashboard extends Component {
                 </div>
 
                 <div className='middleBar'>
-                    <h1 className='middleBarText'>Flag and Coat of Arms</h1>
+                    <h1 className='middleBarText'>FLAG AND COAT OF ARMS</h1>
                 </div>
 
                 <div className='flagAndShield'>
-                    <div style={{height: '215px', width: '325px', border: '1px solid'}}>
+                    <div style={{ height: '215px', width: '325px', border: '1px solid', margin: 'auto', marginTop: '20px' }}>
                         <div className='yFlag'></div>
                     </div>
-                    <div> 
-                        <div className='yShield'></div>
+
+                    <div className='flagBox'>
+                        <h1 style={{ fontFamily: 'Alegreya Sans SC', letterSpacing: '2px' }}>FLAG</h1>
+                        <p style={{ textAlign: 'left', margin: '20px', fontFamily: 'Alegreya Sans', fontSize: '20px' }}>The flag of Yauco consists of two horizontal stripes of equal width, black the superior and gold the inferior one. To the center the official shield of Yauco. The black section of the black represents coffee, which is the city's most cherished crop. The gold section represents the sugar cane; another important crop that was cultivated widely in the plains of Yauco.</p>
+
+                        <h1 style={{ fontFamily: 'Alegreya Sans SC', letterSpacing: '2px' }}>COAT OF ARMS</h1>
+
+                        <p style={{ textAlign: 'left', margin: '20px', fontFamily: 'Alegreya Sans', fontSize: '20px' }}>Shield divided in quarters by a cross in the center that represents the Christendom. In the first aquarter, the shield of the Pacheco family, in honor to its founder and First Lieutenant don Fernando Pacheco. The description of the Pacheco family shield follows: </p>
+
+                        <ul style={{ textAlign: "left", margin: '5px', marginBottom: '20px', fontFamily: 'Alegreya Sans', fontSize: '20px' }}>
+                            <li>In a silver field a gold and black boiler, with seven necks and heads of black serpents in each handle, three to the right hand, confronted with four to the left-hand side. Bordered by a checkered band in gold and black.</li>
+                            <li>The second and third quarter, in a field of gold, two coffee plant flowers of five leaves of silver and four red. The coffee plant flower and the coffee grains, represent their cultivation in the Yauco municipality.</li>
+                            <li>The border of the shield represents the beads of the rosary.</li>
+                            <li>The five tower crown, establishes its category of city.</li>
+                        </ul>
                     </div>
+
+                </div>
+
+                <div>
+
                 </div>
 
                 <Footer />

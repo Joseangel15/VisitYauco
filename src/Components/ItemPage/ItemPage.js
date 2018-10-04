@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { addToCart } from '../../Ducks/reducer';
 import NavBar from '../Nav/NavBar';
 import { Link } from 'react-router-dom';
+import swal from 'sweetalert2'
 import './ItemPage.css';
 
 
@@ -37,7 +38,18 @@ class ItemPage extends Component {
                 console.log(res.data)
                 console.log(res.data)
                 this.props.addToCart(res.data)
-                alert('Your item has been added to the cart')
+                // alert('Your item has been added to the cart')
+                const toast = swal.mixin({
+                    toast: true,
+                    position: 'top',
+                    showConfirmButton: false,
+                    timer: 3000
+                  });
+                  
+                  toast({
+                    type: 'success',
+                    title: 'Your item has been added to the cart'
+                  })
             })
     }
 
@@ -64,7 +76,10 @@ class ItemPage extends Component {
 
                     </div>
 
+
                 </div>
+
+                    <Link to='/Store'><button className='backBtn2'>Back</button></Link>
 
                 <Footer />
 

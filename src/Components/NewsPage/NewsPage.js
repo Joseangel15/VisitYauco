@@ -11,6 +11,7 @@ class NewsPage extends Component {
 
         this.state = {
             news: [],
+            fillerPic: '../../Assets/news.jpg'
         }
 
         this.handleNews = this.handleNews.bind(this);
@@ -36,7 +37,7 @@ class NewsPage extends Component {
             return(
             <div className='newsBox' key={el + i}>
                 <div style={{height: 'auto', width: 'auto', margin: 'auto', padding: '10px'}}>
-                   <img src={el.urlToImage} alt="" className='newsImage'/>
+                   <img src={el.urlToImage === null? this.fillerPic: el.urlToImage} alt="" className='newsImage'/>
                 </div>
 
                 <div>
@@ -54,7 +55,8 @@ class NewsPage extends Component {
         return (
             <div className='bodyBack'>
                 <NavBar />
-                <h1>News From Paradise</h1>
+                <h1 style={{fontFamily: 'Alegreya Sans SC', fontSize: '50px'}}>NEWS FROM PARADISE</h1>
+                <h2 style={{fontFamily: 'Alegreya Sans SC'}}>The most recent and important news about Yauco</h2>
 
                 <div className='allNews'>
                     {superNews}

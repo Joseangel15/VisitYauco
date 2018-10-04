@@ -9,6 +9,23 @@
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
 }
 
+.agueybanaP{
+    width: 200px;
+    margin: auto;
+    text-Align: left;
+    font-Family: 'Alegreya Sans';
+    font-Size: 18px;
+}
+
+.coffeeP{
+    width: 200px;
+    margin: auto;
+    text-Align: left;
+    font-Family: 'Alegreya Sans';
+    font-Size: 18px;
+    margin-bottom: 20px;
+}
+
 .deLeon{
     background-image: url(../../Assets/PoncedeLeon.jpg);
     height: 150px;
@@ -74,6 +91,8 @@
     background-size: cover;
     border-radius: 5px;
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
+    margin-Top: 115px;
+    margin-Left: 10px;
 }
 
 .oldYauco2{
@@ -82,7 +101,7 @@
     width: 350px;
     margin: auto;
     background-size: cover;
-    margin-top: 10px;
+    margin-top: 20px;
     border-radius: 5px;
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
 }
@@ -110,6 +129,32 @@
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
 }
 
+.spanishWar{
+    width: 325px;
+    margin: auto;
+    text-Align: left;
+    font-Family: 'Alegreya Sans';
+    font-Size: 18px;
+    margin-bottom: 10px;
+}
+
+.yFounding{
+    width: 200px;
+    margin: auto;
+    text-Align: left;
+    font-Family: 'Alegreya Sans';
+    font-Size: 18px;
+}
+
+.yModern{
+    width: 200px;
+    margin: auto;
+    text-Align: left;
+    font-Family: 'Alegreya Sans';
+    font-Size: 18px;
+    margin-bottom: 20px;
+}
+
 .yMountain{
     background: url(../../Assets/coffee-plant.jpg) center;
     height: 75px;
@@ -119,4 +164,63 @@
     margin-top: 10px;
     border-radius: 5px;
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
+}
+
+@media(min-width: 700px){
+
+    .muralYauco{
+        width: 700px;
+        margin: auto
+    }
+
+    .history1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .history2{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .yMountain{
+        width: 700px;
+    }
+
+    .oldYauco2{
+        width: 700px;
+    }
+
+    .spanishWar{
+        width: 600px;
+    }
+
+    .agueybanaP{
+        width: 400px;
+    }
+
+    .yFounding{
+        width: 450px;
+    }
+
+    .oldYauco{
+        margin-top: 30px;
+    }
+
+    .coffeeP{
+        width: 600px;
+    }
+
+    .yModern{
+        width: 600px;
+    }
+}
+
+@media(min-width: 1000px){
+    .muralYauco{
+        width: 1000px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }

@@ -18,7 +18,7 @@
     flex-direction: column;
     height: 100%;
     /* border: 1px solid black; */
-    margin: 10px;
+    margin: 12px;
     background-color: rgb(143, 143, 143);
     border-radius: 10px;
     color: white;
@@ -36,7 +36,7 @@
     align-items: flex-start;
     flex-wrap: wrap;
     height: 100%;
-    margin: 10px 5px;
+    margin: 10px 0px;
     margin-bottom: 100px;
 }
 

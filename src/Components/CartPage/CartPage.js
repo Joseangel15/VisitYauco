@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 import NavBar from '../Nav/NavBar';
 import axios from 'axios';
 import Footer from '../Footer/Footer';
+import {Link} from 'react-router-dom'; 
 import { connect } from 'react-redux';
 import { addToCart, removeFromCart, getUserData } from '../../Ducks/reducer'
 import StripeCheckout from 'react-stripe-checkout';
+import swal from 'sweetalert2';
 import './CartPage.css';
 
 
@@ -42,7 +44,7 @@ class CartPage extends Component {
     }
 
     handleUpdateQuantity(value, id) {
-        axios.post(`/api/addcart/${id}`, {
+        axios.put(`/api/addcart/${id}`, {
             quantity: value
         }).then(res => this.props.addToCart(res.data)).catch(err => console.log(err))
     }
@@ -55,7 +57,12 @@ class CartPage extends Component {
 
 
     handleAmount() {
-        return this.total * 100
+        let num = this.total * 100;
+
+        let newNum = +(num).toFixed(2);
+        return newNum;
+
+
     }
 
     handleTotal() {
@@ -72,27 +79,42 @@ class CartPage extends Component {
         return (
             <div>
                 <img src={user.user_pic} alt="" className='userPic' style={{ borderRadius: '10px' }} />
-                <h3>{user.user_name}</h3>
+                <h3>User: {user.user_name}</h3>
             </div>
         )
     }
 
     handleClose() {
+
+        const toast = swal.mixin({
+            toast: true,
+            position: 'top',
+            showConfirmButton: false,
+            timer: 3000
+          });
+
         axios.delete('/api/delcart')
             .then(res => { this.props.removeFromCart(res.data) })
-            .then(alert('Your payment has been processed'))
+            .then(  
+
+              toast({
+                type: 'success',
+                title: 'Your payment has been processed'
+              }))
+
             .catch(err => console.log(err))
     }
 
     handleOnToken(token) {
         token.card = void 0;
-        axios.post('/api/payment', { token, amount: this.handleAmount() }).then(res => { console.log(res) })
+        axios.post('/api/payment', { token, amount: this.handleAmount() }).then(  this.handleClose )
+        .catch(err => {console.log(err)})
     }
 
     createListItems() {
         return this.props.cart.map(
             (cart) => {
-                console.log(this.props.cart)
+                
                 return (
                     <div key={cart.id}>
                         <div className='cartBoxes'>
@@ -129,14 +151,14 @@ class CartPage extends Component {
             <div className='bodyBack'>
                 <NavBar />
                 <h1 style={{fontFamily: 'Alegreya Sans SC'}}>Cart</h1>
-                <div style={{ marginBottom: '100px' }}>
+                <div style={{marginBottom: '100px'}}>
                     <div className='userBox'>
                         {this.handleUserInfo()}
                         <h2>Total:${this.handleTotal()}</h2>
                     </div>
 
-                    <div>
-                        {this.props.cart == 0 ? <h2>No items in Cart</h2> : this.createListItems()}
+                    <div className='muchBoxes'>
+                        {this.props.cart == 0 ? <h2 style={{color: 'white'}}>No items in Cart</h2> : this.createListItems()}
                     </div>
 
                     <div>
@@ -146,7 +168,9 @@ class CartPage extends Component {
                             token={this.handleOnToken}
                             stripeKey={'pk_test_apNfE55khg4j3QZdEJi4RhhF'}
                             amount={this.handleAmount()}
-                            closed={this.handleClose} />
+                             />
+
+                        <Link to='/Store'><button className='backBtn' >Back</button></Link>
 
                     </div>
                 </div>

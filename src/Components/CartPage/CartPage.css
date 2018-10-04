@@ -1,4 +1,14 @@
 
+.backBtn{
+    height: 33px;
+    width: 105px;
+    margin: auto; 
+    margin-left: 30px;
+    border: none; 
+    border-Radius: 5px;
+    background-Color: rgb(248, 255, 0);
+}
+
 .cartBoxes{
     /* border: 1px solid black; */
     display: flex;
@@ -16,6 +26,17 @@
     width: 100px;
     height: 100px;
     margin: auto;
+}
+
+.muchBoxes{
+    margin: auto;
+    /* width: 430px; */
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.801);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+
 }
 
 .removeBtn{
@@ -42,4 +63,17 @@
 .userPic{
     height: 100px;
     width: 100px;
+}
+
+@media(min-width: 420px){
+
+    .cartBoxes{
+        margin: auto;
+        margin: 15px 5px;
+        width: 420px;
+    }
+
+    .muchBoxes{
+        width: 430px;
+    }
 }

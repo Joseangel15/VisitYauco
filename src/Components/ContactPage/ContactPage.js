@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NavBar from '../../Components/Nav/NavBar';
 import Footer from '../Footer/Footer';
 import axios from 'axios';
+import swal from 'sweetalert2';
 import './ContactPage.css';
 
 
@@ -42,6 +43,14 @@ class ContactPage extends Component {
     }
 
     sendEmail() {
+
+        const toast = swal.mixin({
+            toast: true,
+            position: 'top',
+            showConfirmButton: false,
+            timer: 3000
+          });
+          
         let { name, email, subject, message } = this.state
         let info = {
             name,
@@ -54,9 +63,14 @@ class ContactPage extends Component {
             
         })
         this.handleComponentMount()
-        alert('Message sent')
+        toast({
+            type: 'success',
+            title: 'Message Sent'
+          })
 
     }
+
+    
 
 
     render() {

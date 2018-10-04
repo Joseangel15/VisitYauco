@@ -48,7 +48,7 @@ class MapPage extends Component {
         return (
             <div className='bodyBack'>
                 <NavBar />
-                <h1 style={{fontFamily: 'Alegreya Sans SC', fontSize: '32px'}}>365 Days of Summer</h1>
+                <h1 style={{fontFamily: 'Alegreya Sans SC', fontSize: '32px', letterSpacing: '2px', fontSize: '50px'}}>365 DAYS OF SUMMER</h1>
                 <h3 style={{fontFamily: 'Alegreya Sans SC'}}>Map & Weather</h3>
 
                 <div className='googleMap'>

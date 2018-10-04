@@ -1,4 +1,16 @@
 
+.backBtn2{
+    height: 33px;
+    width: 50px;
+    margin: auto; 
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border: none; 
+    border-Radius: 5px;
+    background-Color: rgb(64, 64, 64);
+    color: white;
+}
+
 .buyBtn{
     border: none;
     border-radius: 5px;

@@ -7,7 +7,7 @@
 
 .contactBox{
     color: white;
-    background-color: rgb(143, 143, 143);
+    background-color: rgba(0, 0, 0, 0.801);
     display: flex;
     flex-direction: column;
     width: 350px;

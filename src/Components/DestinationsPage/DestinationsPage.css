@@ -1,7 +1,12 @@
 
+.address{
+    margin-bottom: 0px;
+    font-family: 'Alegreya Sans';
+}
+
 .destinationsTitle{
     font-family: 'Alegreya Sans SC';
-    font-size: 26px;
+    font-size: 50px;
     margin: 40px;
 }
 
@@ -9,6 +14,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    margin-bottom: 100px;
     background-color: rgba(255, 255, 255, 0.438);
     
 }
@@ -17,6 +23,11 @@
     width: 370px;
     height: auto;
     margin: auto; 
+}
+
+.destInfo2{
+    text-align: left;
+    margin: auto;
 }
 
 .locatBtns1{
@@ -228,12 +239,12 @@
     height: auto;
     margin: auto;
     margin-bottom: 30px;
-    color: white;
+    color: black;
     font-size: 18px;
     font-family: 'Alegreya Sans';
-    background-color: rgb(143, 143, 143);
-    border-radius: 10px;
-    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
+    /* background-color: white; */
+    /* border-radius: 10px; */
+    /* box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2); */
 }
 
 .susuaPic{

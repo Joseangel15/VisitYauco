@@ -44,12 +44,15 @@ class NavBar extends Component {
             width: '0px',
             margin: '15px',
             textDecoration: 'none',
-            color: 'white'
+            color: 'white',
+            cursor: 'pointer'
         }
 
         const linkColor = {
             textDecoration: 'none',
-            color: 'white'
+            color: 'white',
+            cursor: 'pointer'
+            
         }
 
         return (
@@ -66,9 +69,9 @@ class NavBar extends Component {
                         </div>
                         <div className='nav-menu'>
                             <Link to='/'><h3 style={linkColor}>Home</h3></Link>
-                            <h3 style={linkColor} onClick={this.handleLogin}>Store</h3>
+                            <h3  style={linkColor} onClick={this.handleLogin}>Store</h3>
                             <Link to='/Contact'><h3 style={linkColor}>Contact</h3></Link>
-                            <h3 style={linkColor} onClick={this.logout}>Logout</h3>
+                            <Link to='/'><h3 style={linkColor} onClick={this.logout}>Logout</h3></Link>
                         </div>
                     </nav>
                 </header>
@@ -79,7 +82,7 @@ class NavBar extends Component {
                         <Link to='/Contact'><h3 style={navMenuStyle}>Contact</h3></Link>
 
                         <a href={`${window.origin}/api/logout`}>
-                            <h3 style={navMenuStyle} onClick={this.logout}>Logout</h3>
+                            <Link to='/'><h3 style={navMenuStyle} onClick={this.logout}>Logout</h3></Link>
                         </a>
                     </div>
                 </div>

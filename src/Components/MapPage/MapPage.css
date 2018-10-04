@@ -53,6 +53,21 @@
     margin-bottom: 5px;
 }
 
+@media(min-width: 700px){
+
+    .googleMap{
+        height: 400px;
+        width: 680px;
+        border: 1px solid black;
+        margin: auto;
+        box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
+    }
+
+    .weatherText{
+        width: 600px;
+    }
+}
+
 @media(min-width: 1000px){
 
     .googleMap{
