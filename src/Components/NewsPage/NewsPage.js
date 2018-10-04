@@ -26,7 +26,7 @@ class NewsPage extends Component {
             this.setState({
                 news: res.data.articles
             })
-            console.log(this.state.news)
+            
         })
     }
 
@@ -49,7 +49,7 @@ class NewsPage extends Component {
             </div>
             )
     })
-    console.log(superNews)
+   
 
 
         return (

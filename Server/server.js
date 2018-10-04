@@ -58,7 +58,6 @@ app.get('/auth/callback', async (req, res) => {
 
     if (userExists[0]) {
         req.session.user = userExists[0];
-        console.log(req.session.user)
         res.redirect(`${process.env.FRONTEND_DOMAIN}/#/Store`)
     } else {
         db.create_User([sub, name, picture, given_name, family_name, email]).then(create_User => {
@@ -80,7 +79,7 @@ app.get('/api/user/user-data', (req, res) => {
 })
 
 app.get('/api/logout', (req, res) => {
-    console.log(req.session)
+    
     req.session.destroy()
     res.redirect(`${process.env.FRONTEND_DOMAIN}/#/`)
 })

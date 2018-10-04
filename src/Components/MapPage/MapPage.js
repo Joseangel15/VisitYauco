@@ -28,16 +28,14 @@ class MapPage extends Component {
 
     handleWeather() {
 
-        axios.get(`http://api.openweathermap.org/data/2.5/weather?q=Yauco,pr&units=imperial&appid=${API_KEY}`).then(res => {
+        axios.get(`https://api.openweathermap.org/data/2.5/weather?q=Yauco,pr&units=imperial&appid=${API_KEY}`).then(res => {
             this.setState({
                 yaucoWeather: res.data,
                 yaucoTemp: res.data["main"].temp,
                 yaucoPr: res.data["sys"].country,
                 wIcon: res.data["weather"][0].icon,
             })
-            console.log(this.state.yaucoWeather)
-            console.log(this.state.yaucoWeather["main"].temp)
-            console.log(this.state.wIcon)
+            
 
         }).catch(err => console.log(err))
     }
