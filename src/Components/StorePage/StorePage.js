@@ -24,7 +24,6 @@ class StorePage extends Component  {
             this.setState({
                 products: res.data
             })
-            console.log(this.state.products)
         })
     }
 
@@ -51,7 +50,7 @@ class StorePage extends Component  {
                     <Link to='/Cart'><button className='cartBtn'></button></Link>
                 </div>
                 <div className='pageTitle'>
-                    <h1 style={{fontFamily: 'Alegreya Sans SC'}}>A Gift to Remember</h1>
+                    <h1 style={{fontFamily: 'Alegreya Sans SC'}}>A GIFT TO REMEMBER</h1>
                 </div>
 
                 <div className='Products'>

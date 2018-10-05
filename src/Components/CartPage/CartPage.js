@@ -32,7 +32,7 @@ class CartPage extends Component {
         }
         axios.get('/api/user/user-data').then(res => {
             this.props.getUserData(res.data)
-            console.log(res.data)
+            
         })
     }
 

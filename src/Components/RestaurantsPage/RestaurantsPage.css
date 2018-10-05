@@ -1,12 +1,24 @@
 
+.newP2{
+    padding-top: 5px;
+    width: 350px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 30px;
+    color: black;
+    font-size: 18px;
+    font-family: 'Alegreya Sans';
+}
 
 .RestBtns1{
     height: 80px;
-    width: 375.2px;
+    width: auto;
     margin: auto;
     font-family: 'Alegreya Sans SC';
     color: white;
     font-size: 30px;
+    /* background-color: black; */
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6) ), url(../../Assets/Puerto-Rico-Desktop-Background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     -ms-background-position-x: center;
@@ -23,11 +35,13 @@
 
 .RestBtns2{
     height: 80px;
-    width: 375.2px;
+    width: auto;
     margin: auto;
     font-family: 'Alegreya Sans SC';
     color: white;
     font-size: 30px;
+    /* background-color: black; */
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6) ), url(../../Assets/Puerto-Rico-Desktop-Background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     -ms-background-position-x: center;
@@ -44,11 +58,13 @@
 
 .RestBtns3{
     height: 80px;
-    width: 375.2px;
+    width: auto;
     margin: auto;
     font-family: 'Alegreya Sans SC';
     color: white;
     font-size: 30px;
+    /* background-color: black; */
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6) ), url(../../Assets/Puerto-Rico-Desktop-Background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     -ms-background-position-x: center;
@@ -65,11 +81,13 @@
 
 .RestBtns4{
     height: 80px;
-    width: 375.2px;
+    width: auto;
     margin: auto;
     font-family: 'Alegreya Sans SC';
     color: white;
     font-size: 30px;
+    /* background-color: black; */
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6) ), url(../../Assets/Puerto-Rico-Desktop-Background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     -ms-background-position-x: center;
@@ -86,11 +104,13 @@
 
 .RestBtns5{
     height: 80px;
-    width: 375.2px;
+    width: auto;
     margin: auto;
     font-family: 'Alegreya Sans SC';
     color: white;
     font-size: 30px;
+    /* background-color: black; */
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6) ), url(../../Assets/Puerto-Rico-Desktop-Background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     -ms-background-position-x: center;
@@ -103,4 +123,87 @@
     display: flex;
     justify-content: center;
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
+}
+
+.restPic1{
+    background-image: url(../../Assets/qlantro.jpg);
+    height: 120px;
+    width: 250px;
+    background-size: cover;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
+}
+
+.restPic2{
+    background: url(../../Assets/elPaladar.jpg) center;
+    height: 120px;
+    width: 250px;
+    background-size: cover;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
+}
+
+.restPic3{
+    background: url(../../Assets/laCarreta.jpg) center;
+    height: 120px;
+    width: 250px;
+    background-size: cover;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
+}
+
+.restPic4{
+    background-image: url(../../Assets/guardarraya.jpg);
+    height: 120px;
+    width: 250px;
+    background-size: cover;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
+}
+
+.restPic5{
+    background: url(../../Assets/gustitoYaucano.jpg) center;
+    height: 120px;
+    width: 250px;
+    background-size: cover;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
+}
+
+@media(min-width: 700px){
+
+    
+}
+
+@media(min-width: 900px){
+
+    .RestBtns1{
+        width: 900px;
+    }
+
+    .RestBtns2{
+        width: 900px;
+    }
+
+    .RestBtns3{
+        width: 900px;
+    }
+
+    .RestBtns4{
+        width: 900px;
+    }
+
+    .RestBtns5{
+        width: 900px;
+    }
 }
