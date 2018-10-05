@@ -1,4 +1,8 @@
 
+.allNews{
+    margin-bottom: 100px;
+}
+
 .fit-picture{
     width: 250px;
 }
@@ -20,6 +24,8 @@
     height: 125px;
     border-radius: 10px;
 }
+
+
 
 @media(min-width: 700px){
 

@@ -18,12 +18,13 @@
 }
 
 .coffeeP{
-    width: 200px;
+    width: 325px;
     margin: auto;
     text-Align: left;
     font-Family: 'Alegreya Sans';
     font-Size: 18px;
     margin-bottom: 20px;
+    
 }
 
 .deLeon{
@@ -69,6 +70,7 @@
 
 .miniBox{
     margin: auto;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     height: 100%;
@@ -147,7 +149,7 @@
 }
 
 .yModern{
-    width: 200px;
+    width: 325px;
     margin: auto;
     text-Align: left;
     font-Family: 'Alegreya Sans';

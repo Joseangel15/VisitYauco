@@ -16,13 +16,13 @@ class HistoryPage extends Component {
 
                 <div>
                     <div className='muralYauco'>
-                        <h4 style={{marginRight: '175px', fontFamily: 'Alegreya Sans SC', fontSize: '22px'}}>Los Corsos
+                        <h4 style={{marginRight: '175px', fontFamily: 'Alegreya Sans SC', fontSize: '22px', marginBottom: '15px'}}>Los Corsos
                             <h6 style={{margin: '0px'}}>"The Corsicans"</h6>
                         </h4>
-                        <h4 style={{fontFamily: 'Alegreya Sans SC', fontSize: '26px', marginLeft: '150px'}}>El Pueblo del Cafe
+                        <h4 style={{fontFamily: 'Alegreya Sans SC', fontSize: '26px', marginLeft: '150px', marginTop: '10px', marginBottom: '10px'}}>El Pueblo del Cafe
                             <h6 style={{margin: '0px'}}>"The Town of Coffee"</h6>
                         </h4>
-                        <h4 style={{marginRight: '175px', fontFamily: 'Alegreya Sans SC', fontSize: '22px'}}>La Capital Taina
+                        <h4 style={{marginRight: '175px', fontFamily: 'Alegreya Sans SC', fontSize: '22px', marginTop: '10px'}}>La Capital Taina
                             <h6 style={{margin: '0px'}}>"The Taino Capital"</h6>
                         </h4>
                     </div>
@@ -63,7 +63,7 @@ class HistoryPage extends Component {
 
                     </div>
 
-                    <div>
+                    <div style={{marginTop: '30px'}}>
                         <h2 style={{fontFamily: 'Alegreya Sans SC'}}>THE LAND OF COFFEE</h2>
 
                         <p className='coffeeP' >The new settlers dedicated themselves to the cultivation of these crops and within a short period of time some were even able to own and operate their own grocery stores. However, it was with the cultivation of the coffee bean that they would make their fortunes. Cultivation of coffee in Yauco originally began in the Rancheras and Diego Hernández sectors and later extended to the Aguas Blancas, Frailes and Rubias sectors. Yauco coffees are a revived specialty origin that, at best, display the qualities that made Jamaica Blue Mountain famous: A deep, vibrant, yet restrained acidity and balanced, gently rich flavor. </p>
@@ -71,7 +71,7 @@ class HistoryPage extends Component {
                         <div className='yMountain'></div>
                     </div>
 
-                    <div>
+                    <div style={{marginTop: '30px'}}>
                         <h2 style={{fontFamily: 'Alegreya Sans SC'}}>SPANISH AMERICAN WAR</h2>
 
                         <p className='spanishWar' >Yauco was also the place where the first major land battle between Spanish/Puerto Rican and American armed forces was fought in Puerto Rico during the war. On July 26, 1898, Spanish forces and Puerto Rican volunteers, led by Captain Salvador Meca and Lieutenant Colonel Francisco Puig fought against the American forces led by Brigadier General George A. Garretson. The Spanish forces engaged the 6th Massachusetts in a firefight at the Hacienda Desideria, owned by Antonio Mariani, in what became known as the Battle of Yauco of the Puerto Rico Campaign. Puig and his forces suffered 2 officers and 3 soldiers wounded and 2 soldiers dead. The Spanish forces were ordered to retreat.</p>
@@ -83,7 +83,7 @@ class HistoryPage extends Component {
                     </div>
 
                     <div>
-                        <h2 style={{fontFamily: 'Alegreya Sans SC'}}>MODERN YAUCO</h2>
+                        <h2 style={{fontFamily: 'Alegreya Sans SC', marginTop: '30px'}}>MODERN YAUCO</h2>
 
                         <p className='yModern'>From coffee plantations to beautiful unspoiled coasts; Visitors to this picturesque destination will not only find significant historical sights, architectural wonders, quaint shops and modern plazas, but spectacular nature reserves and forest reserves that are located outside the city. Yauco is a unique city with its own mixture of culture and tradition and is one of the highly recommended destinations in Puerto Rico.</p>
 
