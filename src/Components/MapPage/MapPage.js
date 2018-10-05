@@ -5,8 +5,6 @@ import GoogleMapReact from './GoogleMap/GoogleMapReact';
 import axios from 'axios';
 import './MapPage.css';
 
-const API_KEY = "97fa0ffefd40513b2bcd6715b292ba61"
-
 
 class MapPage extends Component {
     constructor(props) {
@@ -28,7 +26,11 @@ class MapPage extends Component {
 
     handleWeather() {
 
-        axios.get(`https://api.openweathermap.org/data/2.5/weather?q=Yauco,pr&units=imperial&appid=${API_KEY}`).then(res => {
+        let { REACT_APP_API_KEY_WEATHER } = process.env;
+
+        // let API_KEY_WEATHER = process.env.API_KEY_WEATHER;
+
+        axios.get(`https://api.openweathermap.org/data/2.5/weather?q=Yauco,pr&units=imperial&appid=${REACT_APP_API_KEY_WEATHER}`).then(res => {
             this.setState({
                 yaucoWeather: res.data,
                 yaucoTemp: res.data["main"].temp,
@@ -46,7 +48,7 @@ class MapPage extends Component {
         return (
             <div className='bodyBack'>
                 <NavBar />
-                <h1 style={{fontFamily: 'Alegreya Sans SC', fontSize: '32px', letterSpacing: '2px', fontSize: '50px'}}>365 DAYS OF SUMMER</h1>
+                <h1 style={{fontFamily: 'Alegreya Sans SC', letterSpacing: '2px', fontSize: '50px'}}>365 DAYS OF SUMMER</h1>
                 <h3 style={{fontFamily: 'Alegreya Sans SC'}}>Map & Weather</h3>
 
                 <div className='googleMap'>

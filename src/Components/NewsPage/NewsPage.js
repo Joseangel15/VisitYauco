@@ -22,7 +22,10 @@ class NewsPage extends Component {
     }
 
     handleNews () {
-        axios.get('https://newsapi.org/v2/everything?q=yauco&sortBy=publishedAt&apiKey=2c9c5233364a428eab504039ade63d34').then(res => {
+
+        let {REACT_APP_API_KEY_NEWS} = process.env;
+
+        axios.get(`https://newsapi.org/v2/everything?q=yauco&sortBy=publishedAt&apiKey=${REACT_APP_API_KEY_NEWS}`).then(res => {
             this.setState({
                 news: res.data.articles
             })
