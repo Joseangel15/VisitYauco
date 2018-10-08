@@ -9,7 +9,7 @@ class HistoryPage extends Component {
 
     render() {
         return (
-            <div className='bodyBack'>
+            <div className='bodyBack' >
                 <NavBar />
 
                 <h1 style={{fontFamily: 'Alegreya Sans SC', fontSize: '50px'}}>DISCOVER THE HISTORY OF YAUCO</h1>

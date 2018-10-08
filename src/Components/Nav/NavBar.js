@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './NavBar.css';
 import '../../Assets/baseline-menu-24px.svg';
@@ -28,13 +28,13 @@ class NavBar extends Component {
         axios.get('/api/logout')
     }
 
-    handleLogin () {
+    handleLogin() {
 
         let { REACT_APP_DOMAIN, REACT_APP_CLIENT_ID } = process.env;
         console.log(REACT_APP_CLIENT_ID)
 
         let redirectUri = encodeURIComponent(`${window.location.origin}/auth/callback`);
-        
+
         window.location = `https://${REACT_APP_DOMAIN}/authorize?client_id=${REACT_APP_CLIENT_ID}&scope=openid%20profile%20email&redirect_uri=${redirectUri}&response_type=code`;
     }
 
@@ -55,14 +55,19 @@ class NavBar extends Component {
             textDecoration: 'none',
             color: 'white',
             cursor: 'pointer'
-            
+
         }
 
         return (
             <div>
                 <header>
                     <nav>
-                        <Link to='/'><h1>YAUCO</h1></Link>
+                        <Link to='/'>
+                            <div className='topTitle'>
+                                <h3 className='visitTop'>Visit</h3>
+                                <h2 className='yaucoTop'>Yauco</h2>
+                            </div>
+                        </Link>
                         <div className='good-burger' onClick={() => this.toggleNav()}>
                             <div className='ingredients'>
                                 <div></div>
@@ -72,7 +77,7 @@ class NavBar extends Component {
                         </div>
                         <div className='nav-menu'>
                             <Link to='/'><h3 style={linkColor}>Home</h3></Link>
-                            <h3  style={linkColor} onClick={this.handleLogin}>Store</h3>
+                            <h3 style={linkColor} onClick={this.handleLogin}>Store</h3>
                             <Link to='/Contact'><h3 style={linkColor}>Contact</h3></Link>
                             <Link to='/'><h3 style={linkColor} onClick={this.logout}>Logout</h3></Link>
                         </div>
@@ -94,7 +99,7 @@ class NavBar extends Component {
                 </div>
             </div>
         )
-        
+
     }
 
 }

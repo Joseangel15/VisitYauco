@@ -6,4 +6,15 @@
     color: white;
     position: absolute;
     bottom: 0;
+    display: flex;
+    justify-content: center;
 }
+
+.siteLogo{
+    background-image: url(../../Assets/visitYaucoLogo.png);
+    background-size: cover;
+    width: 55px;
+    height: 55px;
+    margin-left: 25px;
+    margin-top: 5px;
+  }
