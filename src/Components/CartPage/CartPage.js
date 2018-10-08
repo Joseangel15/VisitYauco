@@ -164,7 +164,7 @@ class CartPage extends Component {
                     <div>
                         <StripeCheckout
                             name="VisitYauco"
-                            image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrglTr3WvfermEfjoYweYpTvv7CGUfLal9dyj5cj2TPfAkaTEP"
+                            image="http://drive.google.com/uc?export=view&id=1T3cxoNVv70U3s6m89iZxt999iL644gO0"
                             token={this.handleOnToken}
                             stripeKey={'pk_test_apNfE55khg4j3QZdEJi4RhhF'}
                             amount={this.handleAmount()}
