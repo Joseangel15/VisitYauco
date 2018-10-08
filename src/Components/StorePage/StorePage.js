@@ -36,8 +36,8 @@ class StorePage extends Component  {
                         <div style={{height: '150px', width: '150px', margin: 'auto', marginTop: '5px'}}>
                             <Link to={`/Item/${el.id}`}><img src={el.item_image} alt="" className='productPic'/></Link>
                         </div>
-                        <h4 style={{fontFamily: 'Alegreya Sans'}}>{el.item_name}</h4>
-                        <h5>${el.item_price}</h5>                        
+                        <h4 style={{fontFamily: 'Alegreya Sans', marginBottom: '5px'}}>{el.item_name}</h4>
+                        <h5 style={{fontFamily: 'Alegreya Sans', marginTop: '5px', marginBottom: '10px', fontSize: '18px'}}>${el.item_price}</h5>                        
                     </div>
                 </div>
             )
